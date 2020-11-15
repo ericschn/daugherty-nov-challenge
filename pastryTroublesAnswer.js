@@ -30,7 +30,8 @@ orderList.forEach((order, index) => {
     totalPrice += item.price * item.quantity;
   });
   efficiencyRating = totalPrice / totalFlour;
-  efficiencyList.push([efficiencyRating, totalPrice, totalFlour, index]); // add index also so easy to ref original orders
+  // add index also so easy to ref original orders
+  efficiencyList.push([efficiencyRating, totalPrice, totalFlour, index]);
 });
 
 // Sort by efficiency rating
